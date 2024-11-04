@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+}
+
+.subscription-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscription-card {
+    background-color: white; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px;
+    width: 300px; /* Fixed width for card */
+    text-align: center;
+}
+
+.card-title {
+    font-size: 24px; /* Title font size */
+    margin: 0 0 10px; /* Margin below title */
+}
+
+.card-price {
+    font-size: 32px; /* Price font size */
+    color: #007bff; /* Blue color for price */
+    margin: 0 0 20px; /* Margin below price */
+}
+
+.card-description {
+    font-size: 16px; /* Description font size */
+    margin-bottom: 20px; /* Margin below description */
+}
+
+.features-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 20px 0; /* Margin around list */
+}
+
+.features-list li {
+    font-size: 14px; /* Feature font size */
+    margin: 5px 0; /* Margin between features */
+}
+
+.subscribe-btn {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.subscribe-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
