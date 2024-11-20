@@ -1,0 +1,219 @@
+/* index.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    
+    background: #040504;
+    color: #1317fc;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it is above other content */
+    position: sticky; 
+     
+}
+
+/* .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff; 
+}*/
+.logo {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    animation: colorChange 4s infinite; /* Add animation to logo */
+}
+@keyframes colorChange {
+    0% { color: white; }
+    25% { color: #ee0adf; } /* Tomato */
+    50% { color: #24f51d; } /* SteelBlue */
+    75% { color: #f60acf; } /* LimeGreen */
+    100% { color: rgb(10, 206, 255); }
+}
+
+.nav-links a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.search-container {
+    display: flex;
+}
+
+.search-container input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button {
+    background: #005eff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.photo-container {
+    border: #040504 solid;
+    margin-top: 0px;
+    /* border-radius: 10px ; */
+    /* margin-left: 240px;       */
+    position: relative;
+    width: 100%;
+    height: 400px; /* Set height for the slideshow */
+    overflow: hidden; /* Hide overflowing images */
+}
+.photo-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%; /* Fill the height of the container */
+    object-fit: cover; /* Maintain aspect ratio */
+    animation: slide 16s infinite; /* 4 images, each displayed for 4 seconds */
+}
+@keyframes slide {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    25% { opacity: 1; }
+    30% { opacity: 0; }
+    100% { opacity: 0; }
+}
+/* Adjusting the animation for each image */
+.photo-container img:nth-child(1) { animation-delay: 0s; }
+.photo-container img:nth-child(2) { animation-delay: 4s; }
+.photo-container img:nth-child(3) { animation-delay: 8s; }
+.photo-container img:nth-child(4) { animation-delay: 12s; }
+.email-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 36px;
+    color: #000000;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.featured-courses, .testimonials, .call-to-action {
+    background: #ffffff; 
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #caebf6;
+}
+
+.featured-courses h2, .testimonials h2, .call-to-action h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.course {
+    margin-bottom: 15px;
+}
+
+blockquote {
+    border-left: 4px solid #ffffff;
+    padding-left: 15px;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+.email-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.email-container input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-links a {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #000000;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* Photo container styling */
+.photo-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 300px; /* Adjust height as needed */
+}
+
+/* Images styling */
+.photo-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Show the first image initially */
+.photo-container img:first-child {
+    opacity: 1;
+}
+
