@@ -1,6 +1,6 @@
-/* index.css */
 
-/* Reset some default styles */
+
+
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
@@ -21,30 +21,25 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 0; /* Stick to the top */
-    z-index: 1000; /* Ensure it is above other content */
+    top: 0; 
+    z-index: 1000; 
     position: sticky; 
      
 }
 
-/* .logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff; 
-}*/
+
 .logo {
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
     color: white;
-    animation: colorChange 4s infinite; /* Add animation to logo */
+    animation: colorChange 4s infinite; 
 }
 @keyframes colorChange {
     0% { color: white; }
-    25% { color: #ee0adf; } /* Tomato */
-    50% { color: #24f51d; } /* SteelBlue */
-    75% { color: #f60acf; } /* LimeGreen */
+    25% { color: #ee0adf; } 
+    50% { color: #24f51d; } 
+    75% { color: #f60acf; } 
     100% { color: rgb(10, 206, 255); }
 }
 
@@ -79,19 +74,19 @@ header {
 .photo-container {
     border: #040504 solid;
     margin-top: 0px;
-    /* border-radius: 10px ; */
-    /* margin-left: 240px;       */
+    
+    
     position: relative;
     width: 100%;
-    height: 400px; /* Set height for the slideshow */
-    overflow: hidden; /* Hide overflowing images */
+    height: 400px; 
+    overflow: hidden; 
 }
 .photo-container img {
     position: absolute;
     width: 100%;
-    height: 100%; /* Fill the height of the container */
-    object-fit: cover; /* Maintain aspect ratio */
-    animation: slide 16s infinite; /* 4 images, each displayed for 4 seconds */
+    height: 100%; 
+    object-fit: cover; 
+    animation: slide 16s infinite; 
 }
 @keyframes slide {
     0% { opacity: 0; }
@@ -100,7 +95,7 @@ header {
     30% { opacity: 0; }
     100% { opacity: 0; }
 }
-/* Adjusting the animation for each image */
+
 .photo-container img:nth-child(1) { animation-delay: 0s; }
 .photo-container img:nth-child(2) { animation-delay: 4s; }
 .photo-container img:nth-child(3) { animation-delay: 8s; }
@@ -194,15 +189,15 @@ footer {
 
 
 
-/* Photo container styling */
+
 .photo-container {
     display: flex;
     overflow: hidden;
     position: relative;
-    height: 300px; /* Adjust height as needed */
+    height: 300px; 
 }
 
-/* Images styling */
+
 .photo-container img {
     position: absolute;
     width: 100%;
@@ -212,7 +207,7 @@ footer {
     transition: opacity 1s ease-in-out;
 }
 
-/* Show the first image initially */
+
 .photo-container img:first-child {
     opacity: 1;
 }
